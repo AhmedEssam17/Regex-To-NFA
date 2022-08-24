@@ -1,0 +1,13 @@
+digraph "Non Deterministic Finite Automata" {
+	rankdir=LR
+	node [shape=doublecircle]
+	s4
+	node [shape=circle]
+	s1 -> s2 [label="ε"]
+	s1 -> s4 [label="ε"]
+	s3 -> s4 [label="ε"]
+	s3 -> s2 [label="ε"]
+	s2 -> s3 [label=a]
+	node [shape=point]
+	"" -> s1
+}
